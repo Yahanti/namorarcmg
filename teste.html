@@ -1,11 +1,12 @@
 <!DOCTYPE html>
- <html lang="pt-BR">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-   body {
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
     margin: 0;
     padding: 0;
     background: rgb(88, 86, 86);
@@ -73,23 +74,26 @@
     margin-inline-end: 10%;
     font-weight: bold;
 }
-</style>
-  <title>Namora comigo?</title>
- </head>
- <header>
-  <div class="cabeçalho">
-   <h3>Não aceito "não" como resposta 😔</h3>
-  </div>
-</header>
+    </style>
+    <title>Namora comigo?</title>
+</head>
+
 <body>
-  <h1>Você aceita namorar comigo?</h1>
-  <div class="yes-or-no">
-  <button class="yes" onclick="tanks()">Sim :)</button>
-  <button class="no" onclick="not()">Não :(</button>
-  </div>
-</body>
-<script>var btn = document.querySelector(".no");
-    var position
+    <header>
+        <div class="cabeçalho">
+            <h3>Não aceito "não" como resposta 😔</h3>
+        </div>
+    </header>
+
+    <h1>Você aceita namorar comigo?</h1>
+    <div class="yes-or-no">
+        <button class="yes" onclick="tanks()">Sim :)</button>
+        <button class="no" onclick="not()">Não :(</button>
+    </div>
+
+    <script>
+       var btn = document.querySelector(".no");
+       var position
     
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         btn.addEventListener("touchstart", function() {
@@ -118,5 +122,7 @@
     function not() {
     alert("Você nem ta maluca de não aceitar, volte lá e clique no sim! :/")
 }
-</script>
+    </script>
+</body>
+
 </html>
